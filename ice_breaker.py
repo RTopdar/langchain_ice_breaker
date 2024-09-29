@@ -24,7 +24,7 @@ if __name__ == "__main__":
     Also write which model you have used to generate this information. 
     Also, are you sure that you are using gpt 3.5 and not using GPT 4o-mini, because I specifically asked for GPT 4o mini and paid for it 
     """
-    linkedin_url = lookup("Subhro Acharjee")
+    linkedin_url = lookup("Rounak Topdar")
     print(f"Linkedin URL: {linkedin_url}")
 
     information = scrape_linkedin_profile(linkedin_profile_url=linkedin_url)
