@@ -2,10 +2,11 @@ from langchain_core.prompts import PromptTemplate
 from langchain_openai import ChatOpenAI
 from langchain_ollama import ChatOllama
 from langchain_core.output_parsers import StrOutputParser
-import re
+import json
 import os
 from dotenv import load_dotenv
 from agents.linkedin_lookup_agent import lookup
+from output_parsers import summary_parser
 
 from third_party.third_party.linkedin import scrape_linkedin_profile
 
@@ -20,16 +21,22 @@ if __name__ == "__main__":
     2. a short description of their personality
     3. two interesting facts about them
 
-    I need you to write it in a proper markdown format so that I can easily read it from a .md file. 
-    Also write which model you have used to generate this information. 
-    Also, are you sure that you are using gpt 3.5 and not using GPT 4o-mini, because I specifically asked for GPT 4o mini and paid for it 
+    I need you to write it in a proper json format. 
+    Also write which model you have used to generate this information.
+    \nformat instructions: {format_instructions}
     """
     linkedin_url = lookup("Rounak Topdar")
     print(f"Linkedin URL: {linkedin_url}")
 
     information = scrape_linkedin_profile(linkedin_profile_url=linkedin_url)
     summary_prompt = PromptTemplate(
-        input_variables=["information"], template=summary_template
+        input_variables=[
+            "information",
+        ],
+        template=summary_template,
+        partial_variables={
+            "format_instructions": summary_parser.get_format_instructions()
+        },
     )
 
     models = {
@@ -46,11 +53,20 @@ if __name__ == "__main__":
     }
     llm = models["gpt-4o-mini"]
 
-    chain = summary_prompt | llm | StrOutputParser()
+    chain = summary_prompt | llm | summary_parser
+    # lanchain expression language (LCEL)
     print("Invoking the chain")
     print(f"Using model: {llm.model_name}")
     res = chain.invoke(input={"information": information})
+    print("Chain invoked")
+    if hasattr(res, "dict"):
+        res_dict = res.dict()
+    else:
+        res_dict = res
 
-    with open("response.md", "w") as file:
-        file.write(str(res))
-    print("Response written to response.md")
+    # Serialize to JSON and write to file
+    file_path = "response.json"
+    with open(file_path, "w") as file:
+        json.dump(res_dict, file, indent=4)
+
+    print("Response written to response.json")
