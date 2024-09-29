@@ -20,7 +20,7 @@ from langchain.agents import (
 from langchain import hub
 
 
-def lookup(name: str) -> str:
+def twitter_lookup(name: str) -> str:
     # This function is the main function of the agent. It receives a name and returns the twitter profile of the person
     # The twitter profile is the result of the agent
     # The function is going to be called by the agent executor
@@ -65,4 +65,4 @@ def lookup(name: str) -> str:
 
 
 if __name__ == "__main__":
-    print(lookup("Rounak Topdar"))
+    print(twitter_lookup("Rounak Topdar"))

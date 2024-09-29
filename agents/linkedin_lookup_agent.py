@@ -42,7 +42,7 @@ def lookup(name: str) -> str:
         Tool(
             name="Crawl google 4 linkedin profile pages.",
             description="Crawl google for linkedin profile pages, good for finding urls.",
-            func=get_profile_url,
+            func=lambda name: get_profile_url(name, "linkedin.com"),
         )
     ]
     react_prompt = hub.pull("hwchase17/react")
