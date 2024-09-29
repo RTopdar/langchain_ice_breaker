@@ -1,6 +1,8 @@
 
 # Langchain Ice Breaker
 
+A tool made using python and langchain that uses different LLM models and search APIs to find profiles of individuals in Linkedin and Twitter, scrape their public profile, and generate a summary written in markdown format as response.
+
 A new repo for learning Langchain with python using different models like gpt-40-mini, llama3 and mistral.
 
 This code has been designed to be dynamic to allow users to switch different models easily. You can use pipenv to create a virtual environment and install the required dependencies.
