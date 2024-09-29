@@ -9,25 +9,6 @@ from agents.linkedin_lookup_agent import lookup
 
 from third_party.third_party.linkedin import scrape_linkedin_profile
 
-
-def extract_markdown_content(file_path):
-    with open(file_path, "r") as file:
-        file_content = file.read()
-
-    # Use regex to extract the content field
-    match = re.search(r"content='(.*?)' additional_kwargs", file_content, re.DOTALL)
-    if match:
-        markdown_content = match.group(1)
-        return markdown_content
-    else:
-        return None
-
-
-def save_markdown_content(markdown_content, output_file_path):
-    with open(output_file_path, "w") as file:
-        file.write(markdown_content)
-
-
 if __name__ == "__main__":
     load_dotenv()
 
