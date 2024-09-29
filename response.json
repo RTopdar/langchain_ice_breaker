@@ -1,0 +1,121 @@
+{
+    "public_identifier": "rtopdar",
+    "profile_pic_url": "https://s3.us-west-000.backblazeb2.com/proxycurl/person/rtopdar/profile?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0004d7f56a0400b0000000001%2F20240924%2Fus-west-000%2Fs3%2Faws4_request&X-Amz-Date=20240924T173752Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=6c67b2a898acf06d7f97931bee23fe9ceadc98de07cea67208dd51f54489339a",
+    "first_name": "Rounak",
+    "last_name": "Topdar",
+    "full_name": "Rounak Topdar",
+    "follower_count": 79,
+    "occupation": "Full Stack Engineer at Alphadna Pvt Ltd",
+    "headline": "Experienced Software Engineer | Optimized APIs & Backend Systems | GCP Deployment Expert",
+    "summary": "Full Stack Software Developer, API Tester, and GCP Deployment Engineer. Experienced with leading technologies: Node.js, Express.js, React.js, MongoDB, Firebase Storage, Google Cloud Platform (GCP). Specialized in developing high-performance React.js applications, designing and testing robust RESTful APIs, and deploying applications on GCP. Skilled in containerization with Docker, orchestration with Google Kubernetes Engine (GKE), and automated API testing using Postman. Optimized backend systems, reduced response times and code complexity by 50%, and achieved zero downtime for critical applications. Effectively managed project priorities, improving timelines and client outcomes. Completed '30 Days of Postman for Developers' by Postman, Inc.",
+    "country": "IN",
+    "country_full_name": "India",
+    "city": "Kolkata",
+    "state": "West Bengal",
+    "experiences": [
+      {
+        "starts_at": {
+          "day": 1,
+          "month": 4,
+          "year": 2024
+        },
+        "company": "Alphadna Pvt Ltd",
+        "title": "Full Stack Engineer",
+        "description": "Developing high-performance React.js applications for data visualization with optimized loading times and superior user experiences. Optimize backend systems by developing efficient RESTful APIs and refining schemas, reducing response times and code complexity. Deploy applications on Google Cloud Platform (App Engine, Cloud Run, Compute Engine), employing various deployment methods, version control, and CI/CD pipelines, achieving zero downtime for critical applications. Utilize Firebase storage and Firestore database to build secure and scalable file management systems. Follow SRE best practices in deployment, enhancing system reliability. Collaborate with partners to manage project priorities effectively, resulting in improved project timelines and successful client outcomes.",
+        "location": "Kolkata, West Bengal, India"
+      },
+      {
+        "starts_at": {
+          "day": 1,
+          "month": 3,
+          "year": 2023
+        },
+        "ends_at": {
+          "day": 31,
+          "month": 7,
+          "year": 2024
+        },
+        "company": "Gnosis Lab",
+        "company_linkedin_profile_url": "https://www.linkedin.com/company/gnosis-lab",
+        "title": "Associate Web Developer",
+        "description": "Develop front-end applications to visualize data provided by the client or back-end team",
+        "location": "Kolkata",
+        "logo_url": "https://s3.us-west-000.backblazeb2.com/proxycurl/company/gnosis-lab/profile?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0004d7f56a0400b0000000001%2F20240924%2Fus-west-000%2Fs3%2Faws4_request&X-Amz-Date=20240924T173755Z&X-Amz-Expires=1800&X-Amz-SignedHeaders=host&X-Amz-Signature=de4d19cd668ff074ba49d64a64b8216d190dff57c35c1cee06c46019ab4dccf4"
+      },
+      {
+        "starts_at": {
+          "day": 1,
+          "month": 1,
+          "year": 2021
+        },
+        "ends_at": {
+          "day": 31,
+          "month": 8,
+          "year": 2023
+        },
+        "company": "Cannibals Media",
+        "company_linkedin_profile_url": "https://www.linkedin.com/company/cannibals",
+        "title": "Content Writer",
+        "logo_url": "https://s3.us-west-000.backblazeb2.com/proxycurl/company/cannibals/profile?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0004d7f56a0400b0000000001%2F20240924%2Fus-west-000%2Fs3%2Faws4_request&X-Amz-Date=20240924T173755Z&X-Amz-Expires=1800&X-Amz-SignedHeaders=host&X-Amz-Signature=2aef4cddcc4f23dda9f505b73a854b8674a353e199aeff46a5214b6454597193"
+      }
+    ],
+    "education": [
+      {
+        "starts_at": {
+          "day": 1,
+          "month": 6,
+          "year": 2019
+        },
+        "ends_at": {
+          "day": 28,
+          "month": 2,
+          "year": 2023
+        },
+        "field_of_study": "Computer Science",
+        "degree_name": "Bachelor of Technology - BTech",
+        "school": "University of Engineering & Management (UEM)",
+        "school_linkedin_profile_url": "https://www.linkedin.com/company/25058145/",
+        "description": "Skills: Document Object Model (DOM)",
+        "logo_url": "https://s3.us-west-000.backblazeb2.com/proxycurl/company/university-of-engineering-management-uem/profile?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0004d7f56a0400b0000000001%2F20240924%2Fus-west-000%2Fs3%2Faws4_request&X-Amz-Date=20240924T173755Z&X-Amz-Expires=1800&X-Amz-SignedHeaders=host&X-Amz-Signature=7916bdfb255dde1aef66b2a432cec8afac20911f1c45c952f4ef833e117dcd7c",
+        "grade": "8.36"
+      },
+      {
+        "starts_at": {
+          "day": 1,
+          "month": 1,
+          "year": 2018
+        },
+        "ends_at": {
+          "day": 31,
+          "month": 12,
+          "year": 2019
+        },
+        "school": "Future Campus School - India",
+        "school_linkedin_profile_url": "https://www.linkedin.com/company/7916815/"
+      }
+    ],
+    "accomplishment_projects": [
+      {
+        "title": "ReScout",
+        "description": "• Engineered a React-based application, enabling users to visually analyze real estate properties, enhancing data accessibility, reducing decision-making time, and increasing property utilization rate. • Developed and tested RESTful APIs using Node.js and Express.js frameworks. Utilized Postman and SwaggerUI for API documentation and automated testing. • Utilized Google Cloud Platform’s Artifact Registry to centrally manage and secure containerized application deployments, leading to efficient version control. • Successfully migrated client applications to Google App Engine, achieving significant cost reductions in application deployment."
+      }
+    ],
+    "connections": 78,
+    "people_also_viewed": [
+      {
+        "link": "https://www.linkedin.com/in/soumyadip-chowdhury?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAACNoZtMBc_cnmC-eTnf0Xx3n2D867y-tNug",
+        "name": "Soumyadip Chowdhury",
+        "summary": "Senior Software Engineer @RedHat 👨🏻‍💻📚Teaching @Println (YouTube) 💡 Ex-HoiChoi, Bajaj Finserv Health 💻 Former DSC Lead @UEMK 🎓 Book Chapter author on DTN & Blockchain 📚"
+      },
+      {
+        "link": "https://www.linkedin.com/in/adarshgupta404?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAADeTR-kBTeS7ZhJdf0GidY3duMq7K1WzD2E",
+        "name": "Adarsh Gupta",
+        "summary": "Final Year B.Tech | Full-Stack Web Developer | MERN | NextJS & NestJS | SQL & NoSQL | Java & Spring Boot | Passionate About Open Source"
+      },
+      {
+        "link": "https://www.linkedin.com/in/md-aamir-riyaz?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAD0jxZ4BDrcrJvRov_xa1sOTcvj90wddxEo",
+        "name": "Md Aamir Riyaz",
+        "summary": "Software Development Engineer (SDE) at Turing | Full-Stack Developer | Passionate Programmer | HackerRank Gold | Open Source Contributor | CSM | Ex-RedCarpetUp"
+      }
+    ]
+}

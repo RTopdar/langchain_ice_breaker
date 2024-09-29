@@ -1,45 +1,20 @@
- ```markdown
-# Vergil's Redemption (A Fusion of Dante's Inferno and Like a Prayer)
+Sure! Below is the requested information formatted in Markdown. 
 
-Verse 1:
-In the heart of a forsaken land,
-Where demons rule with their cruel hand,
-Walks a man named Vergil, once a brother tame,
-Now chasing shadows of his former flame.
+```markdown
+# Bio
+**Subhro Acharjee** is a dedicated Software Developer based in Kolkata, India, currently working at TCG LIVINGSPACES PRIVATE LIMITED. With a Bachelor of Technology in Computer Science from the University of Engineering & Management, Subhro has a strong foundation in backend development and is skilled in designing and building efficient, scalable systems. He has experience working with various technologies, including AWS, Terraform, and PostgreSQL, and is passionate about solving complex problems through innovative software solutions.
 
-Chorus:
-(Vergil) Redeem your sins, let them all burn away,
-(Vergil) Walk the path of righteousness, find your own way,
-(Madonna) Like a prayer, when you call my name,
-In this world of darkness, I'll be your flame.
+# Personality Description
+Subhro is a driven and enthusiastic individual who thrives on learning and tackling new challenges. He is known for his strong work ethic and ability to collaborate effectively within teams. His peers describe him as a fast learner who is always eager to expand his knowledge and skills, particularly in coding and software development. Subhro's commitment to delivering high-quality work and his proactive approach to problem-solving make him a valuable asset in any project.
 
-Verse 2:
-Through Inferno's gates and Styx's stream,
-Seeking answers to his haunting dream,
-A path that leads to his own damnation,
-Or the chance for redemption from a new creation.
+# Interesting Facts
+1. Subhro successfully optimized a Terraform codebase, reducing deployment time for each microservice from 30 minutes to just 30 seconds, showcasing his efficiency and technical prowess.
+2. He has implemented AI chat models to enhance user experience, demonstrating his interest in integrating cutting-edge technology into his work.
 
-Chorus:
-(Vergil) Redeem your sins, let them all burn away,
-(Vergil) Walk the path of righteousness, find your own way,
-(Madonna) Like a prayer, when you call my name,
-In this world of darkness, I'll be your flame.
+---
 
-Bridge:
-Demons whisper lies in Vergil's ear,
-Temptation calls from the void so near,
-But within his heart, a light does shine,
-A glimmer of hope that he can find.
-
-Chorus:
-(Vergil) Redeem your sins, let them all burn away,
-(Vergil) Walk the path of righteousness, find your own way,
-(Madonna) Like a prayer, when you call my name,
-In this world of darkness, I'll be your flame.
-
-Outro:
-Vergil stands at a crossroad, lost but not defeated,
-Finding strength within his darkest feared,
-The echoes of Madonna guide him through the night,
-A path towards redemption in the pale moonlight.
+*Model Used: GPT-3.5*
 ```
+
+### Note:
+I am currently using the GPT-3.5 model to generate this information. If you have specific requirements for using a different model, please ensure that the settings are correctly configured in your environment.

@@ -5,6 +5,9 @@ from langchain_core.output_parsers import StrOutputParser
 import re
 import os
 from dotenv import load_dotenv
+from agents.linkedin_lookup_agent import lookup
+
+from third_party.third_party.linkedin import scrape_linkedin_profile
 
 
 def extract_markdown_content(file_path):
@@ -30,67 +33,42 @@ if __name__ == "__main__":
 
     print("This is the main langchain module")
 
-    # summary_template = """
-    # given the information {information} about a person, i want you to create
-    # 1. a short bio
-    # 2. a short description of their personality
-    # 3. two interesting facts about them
-
-    # I need you to write it in a proper markdown format so that I can easily read it from a .md file. Also write which model you have used to generate this information
-    # """
-
     summary_template = """
+    given the information {information} about a person that I got from linkedin, i want you to create
+    1. a short bio
+    2. a short description of their personality
+    3. two interesting facts about them
 
-    Do you know about vergil in devil may cry 5 
-    and of the like a prayer song by madonna? I want you to write me a song 
-    that is a mix of both. Format it properly for a .md file
+    I need you to write it in a proper markdown format so that I can easily read it from a .md file. 
+    Also write which model you have used to generate this information. 
+    Also, are you sure that you are using gpt 3.5 and not using GPT 4o-mini, because I specifically asked for GPT 4o mini and paid for it 
     """
+    linkedin_url = lookup("Subhro Acharjee")
+    print(f"Linkedin URL: {linkedin_url}")
 
-
-    information = [
-        {
-            "name": "John Doe",
-            "age": 25,
-            "occupation": "Software Engineer",
-            "location": "San Francisco",
-            "hobbies": ["reading", "hiking", "biking"],
-            "interests": ["machine learning", "data science", "blockchain"],
-        },
-        {
-            "name": "Jane Doe",
-            "age": 30,
-            "occupation": "Data Scientist",
-            "location": "New York",
-            "hobbies": ["painting", "cooking", "traveling"],
-            "interests": ["artificial intelligence", "big data", "neural networks"],
-        },
-        {
-            "name": "Alice Smith",
-            "age": 35,
-            "occupation": "Product Manager",
-            "location": "Los Angeles",
-            "hobbies": ["swimming", "dancing", "singing"],
-            "interests": ["product design", "user experience", "agile methodology"],
-        },
-    ]
+    information = scrape_linkedin_profile(linkedin_profile_url=linkedin_url)
     summary_prompt = PromptTemplate(
         input_variables=["information"], template=summary_template
     )
 
     models = {
-    "gpt-4o-mini": ChatOpenAI(temperature=0, model_name="gpt-4o-mini"),
-    "llama3": ChatOllama(model="llama3"),
-    "mistral": ChatOllama(model="mistral"),
-    # Add more models as needed
-}
-
-    # llm = ChatOpenAI(temperature=0, model_name="gpt-4o-mini")
-    # llm = ChatOllama(model="llama3")
+        "gpt-4o-mini": ChatOpenAI(
+            model="gpt-4o-mini",
+            temperature=0,
+            max_tokens=None,
+            timeout=None,
+            max_retries=2,
+        ),
+        "llama3": ChatOllama(model="llama3"),
+        "mistral": ChatOllama(model="mistral"),
+        # Add more models as needed
+    }
     llm = models["gpt-4o-mini"]
 
     chain = summary_prompt | llm | StrOutputParser()
     print("Invoking the chain")
-    res = chain.invoke(input={"information": information[2]})
+    print(f"Using model: {llm.model_name}")
+    res = chain.invoke(input={"information": information})
 
     with open("response.md", "w") as file:
         file.write(str(res))
